@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "271871897107",
+    "project_id": "phone-fireba",
+    "storage_bucket": "phone-fireba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271871897107:android:63fbae228a36994a9fd9e6",
+        "android_client_info": {
+          "package_name": "com.example.hackathon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW7OpdEEdnCXT6FBiNzNzET2-ZQmWowRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
