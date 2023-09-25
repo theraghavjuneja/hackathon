@@ -10,7 +10,7 @@ class MyOrdersScreen extends StatelessWidget {
         title: Text('My Orders'),
       ),
       body: Container(
-        color: Colors.blue, // Change the color as needed
+        color: Colors.blue,
         child: const Center(
           child: Text('My Orders Screen'),
         ),

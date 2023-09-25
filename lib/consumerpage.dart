@@ -13,20 +13,20 @@ class SlidingImageRow extends StatefulWidget {
 
 class _SlidingImageRowState extends State<SlidingImageRow> {
   final List<String> imagePaths = [
-    'images/image1.jpeg',
-    'images/image2.jpeg',
-    'images/image3.jpeg',
-    'images/image4.jpeg',
-    'images/mage5.jpeg'
+    'images/new1.png',
+    'images/new2.png',
+    'images/new3.png',
+    'images/new4.png',
+    'images/new5.png'
   ];
 
 
   final List<String> imageTexts = [
-    'Text 1',
-    'Text 2',
-    'Text 3',
-    'Text 4',
-    'Text 5',
+    'Men\'s Fashion',
+    'Bags',
+    'Women\'s Fashion',
+    'Shoes',
+    'Electronics',
   ];
 
   @override
@@ -54,7 +54,7 @@ class _SlidingImageRowState extends State<SlidingImageRow> {
             ),
             TextButton(
               onPressed: () {
-                // yhan view all krne ka code aajaayegaaaa
+
               },
               child: const Text(
                 'View All',
@@ -68,20 +68,20 @@ class _SlidingImageRowState extends State<SlidingImageRow> {
         ),
         const SizedBox(height: 10),
         Container(
-          height: 160, // Adjust the height as needed
+          height: 160,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: imagePaths.length,
             itemBuilder: (BuildContext context, int index) {
               return Padding(
-                padding: EdgeInsets.only(left: 8, right: 8), // Add spacing between images
+                padding: EdgeInsets.only(left: 8, right: 8),
                 child: Column(
                   children: [
                     ImageSquareCircular(imagePath: imagePaths[index], size: 100),
-                    SizedBox(height: 8), // Add spacing between image and text
+                    const SizedBox(height: 8),
                     Text(
-                      imageTexts[index], // Display the corresponding text
-                      style: TextStyle(
+                      imageTexts[index],
+                      style: const TextStyle(
                         fontSize: 12,
                         color: Colors.black,
                       ),
@@ -103,20 +103,20 @@ class SlidingImageRow2 extends StatefulWidget {
 
 class _SlidingImageRowState2 extends State<SlidingImageRow2> {
   final List<String> imagePaths = [
-    'images/image1.jpeg',
-    'images/image2.jpeg',
-    'images/image3.jpeg',
-    'images/image4.jpeg',
-    'images/mage5.jpeg'
+    'images/footwear.png',
+    'images/beautyandmakeup.png',
+    'images/personal_care.jpeg',
+    'images/mengrooming.jpeg',
+    'images/healthcare.jpg'
   ];
 
   // Sample text for reference
   final List<String> imageTexts = [
-    'Text 1',
-    'Text 2',
-    'Text 3',
-    'Text 4',
-    'Text 5',
+    'Footwear',
+    'Beauty and makeup',
+    'Personal Care',
+    'Men\'s Grooming',
+    'HealthCare',
   ];
 
   @override
@@ -144,7 +144,7 @@ class _SlidingImageRowState2 extends State<SlidingImageRow2> {
             ),
             TextButton(
               onPressed: () {
-                // yhan view all krne ka code aajaayegaaaa
+
               },
               child: const Text(
                 'View All',
@@ -158,20 +158,20 @@ class _SlidingImageRowState2 extends State<SlidingImageRow2> {
         ),
         const SizedBox(height: 10),
         Container(
-          height: 160, // Adjust the height as needed
+          height: 160,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: imagePaths.length,
             itemBuilder: (BuildContext context, int index) {
               return Padding(
-                padding: EdgeInsets.only(left: 8, right: 8), // Add spacing between images
+                padding: const EdgeInsets.only(left: 8, right: 8),
                 child: Column(
                   children: [
                     ImageSquareCircular(imagePath: imagePaths[index], size: 100),
-                    SizedBox(height: 8), // Add spacing between image and text
+                    const SizedBox(height: 8),
                     Text(
-                      imageTexts[index], // Display the corresponding text
-                      style: TextStyle(
+                      imageTexts[index],
+                      style: const TextStyle(
                         fontSize: 12,
                         color: Colors.black,
                       ),
@@ -204,15 +204,15 @@ class _ConsumerPageState extends State<ConsumerPage> {
         body: CustomScrollView(
           slivers: [
             SliverAppBar(
-              backgroundColor: Colors.transparent, // Make the app bar transparent
-              floating: false, // The app bar won't float
-              pinned: true, // The app bar will stay pinned at the top
-              expandedHeight: 80, // Adjust this height as needed
+              backgroundColor: Colors.transparent,
+              floating: false,
+              pinned: true,
+              expandedHeight: 80,
               flexibleSpace: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10.0),
                 child: Row(
                   children: <Widget>[
-                    const SizedBox(width: 10.0), // Add spacing here
+                    const SizedBox(width: 10.0),
                     Expanded(
                       child: Row(
                         children: [
@@ -260,7 +260,7 @@ class _ConsumerPageState extends State<ConsumerPage> {
                               ),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(Icons.filter_list), // Add filter icon
+                                icon: Icon(Icons.filter_list),
                               ),
                             ],
                           ),

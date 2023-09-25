@@ -12,18 +12,18 @@ class ImageSquareCircular extends StatelessWidget {
       width: size,
       height: size,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(size / 6), // Adjust the radius value as needed
+        borderRadius: BorderRadius.circular(size / 6),
         border: Border.all(
-          color: Colors.black, // Border color
-          width: 2.0, // Border width
+          color: Colors.black,
+          width: 2.0,
         ),
       ),
       child: ClipRRect(
-        // Clip the image to the rounded borders
-        borderRadius: BorderRadius.circular(size / 10), // Adjust the radius value as needed
+
+        borderRadius: BorderRadius.circular(size / 10),
         child: Image.asset(
           imagePath,
-          fit: BoxFit.cover, // Cover the entire square area
+          fit: BoxFit.cover,
         ),
       ),
     );

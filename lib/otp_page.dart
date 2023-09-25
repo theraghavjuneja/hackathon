@@ -10,7 +10,7 @@ class OtpPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double progress = 3 / 3; // 33% progress
+    double progress = 3 / 3;
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
@@ -68,25 +68,22 @@ class OtpPage extends StatelessWidget {
               const SizedBox(
                 height: 10.0,
               ),
-              Column(
+              const Column(
                 children: [
-                  // getting the code data from a dart plugin over here
-                  // code available on the plugin site as an information of how to use it
-                  PinTextField(
-                    number: 4,
-                    onComplete: (code) {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(content: Text('Completed code is $code')),
-                      );
-                    },
-                    validator: (value) {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
-                          content: Text('Do not leave any codes missing!'),
+
+                  TextField(
+                    keyboardType: TextInputType.number,
+                    maxLength: 4,
+                    decoration: InputDecoration(
+                      hintText: '1 2 3 4',
+                      hintStyle: TextStyle(
+                        letterSpacing: 24.0,
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.blue,
                         ),
-                      );
-                    },
-                  ),
+                      ), ),),
                 ],
               ),
               const SizedBox(
@@ -132,15 +129,15 @@ class OtpPage extends StatelessWidget {
                 height: 15.0,
                 child: SliderTheme(
                   data: const SliderThemeData(
-                    trackHeight: 10.0, // Adjust the height as needed
+                    trackHeight: 10.0,
                   ),
                   child: Slider(
                     value: progress,
                     onChanged: (value) {
-                      // Handle slider value change
+
                     },
-                    activeColor: const Color(0xFF363d80), // Color of the filled part
-                    inactiveColor: const Color(0xFFF0F0F0), // Color of the unfilled part
+                    activeColor: const Color(0xFF363d80),
+                    inactiveColor: const Color(0xFFF0F0F0),
                   ),
                 ),
               ),

@@ -22,14 +22,14 @@ class _SecondPageState extends State<SecondPage> {
 
   Widget buildLogoImage(String assetPath) {
     return Container(
-      width: 72.0, // Width of the circular logo
-      height: 72.0, // Height of the circular logo
-      margin: const EdgeInsets.all(8.0), // Adjust the margin as needed
+      width: 72.0,
+      height: 72.0,
+      margin: const EdgeInsets.all(8.0),
       decoration: BoxDecoration(
-        shape: BoxShape.circle, // Circular shape
+        shape: BoxShape.circle,
         image: DecorationImage(
-          image: AssetImage(assetPath), // Asset path to your logo image
-          fit: BoxFit.cover, // Cover the entire circle
+          image: AssetImage(assetPath),
+          fit: BoxFit.cover,
         ),
       ),
     );
@@ -50,7 +50,6 @@ class _SecondPageState extends State<SecondPage> {
                   width: double.infinity,
                   image: AssetImage('images/logo.png'),
                 ),
-                // Your main content here
               ),
               const Align(
                 alignment: Alignment.topLeft,

@@ -23,14 +23,14 @@ class MSMEMart extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        'lib/consumerpage.dart': (context) => const ConsumerPage(), // Replace ConsumerPage() with your actual widget
+        'lib/consumerpage.dart': (context) => const ConsumerPage(),
         'lib/categories.dart': (context) => CategoriesScreen(),
-        'lib/my_orders.dart':(context)=>  MyOrdersScreen() , // My Orders screen
-        'lib/nearby_sellers.dart':(context)=>NearbySellersScreen(),// Nearby Sellers screen
+        'lib/my_orders.dart':(context)=>  MyOrdersScreen() ,
+        'lib/nearby_sellers.dart':(context)=>NearbySellersScreen(),
         'lib/profile.dart':(context)=>const ProfileScreen(),
 
 
-        // Define other routes similarly
+
       },
       home: const SafeArea(child: LoginPage()),
     );
@@ -61,7 +61,6 @@ class _LoginPageState extends State<LoginPage> {
                 width: double.infinity,
                 image: AssetImage('images/logo.png'),
               ),
-              // Your main content here
             ),
             Padding(
               padding: const EdgeInsets.only(top: 10.0, left: 10.0),

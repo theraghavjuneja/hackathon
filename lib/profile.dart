@@ -11,9 +11,9 @@ class ProfileScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Profile'),
       ),
-      body: SingleChildScrollView( // Wrap the Container with SingleChildScrollView
+      body: SingleChildScrollView(
         child: Container(
-          color: Colors.white, // Change the background color to white
+          color: Colors.white,
           padding: const EdgeInsets.all(16.0),
           child: const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -21,15 +21,15 @@ class ProfileScreen extends StatelessWidget {
               Card(
                 child: ListTile(
                   leading: CircleAvatar(
-                    // Random profile icon
-                    backgroundColor: Colors.blue, // Change this color as needed
+
+                    backgroundColor: Colors.blue,
                     child: Icon(
                       Icons.person,
                       color: Colors.white,
                     ),
                   ),
                   title: Text(
-                    'Customer Name', // Replace with the customer's name
+                    'Customer Name',
                     style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
                   ),
                 ),

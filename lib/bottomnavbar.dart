@@ -21,11 +21,11 @@ class _BottomNavigationState extends State<BottomNavigation> {
       onTap: (int index) {
 
         final List<String> routes = [
-          'lib/consumerpage.dart',           // Home screen
-          'lib/categories.dart',     // Categories screen
-          'lib/my_orders.dart',      // My Orders screen
-          'lib/nearby_sellers.dart', // Nearby Sellers screen
-          'lib/profile.dart',        // Profile screen
+          'lib/consumerpage.dart',
+          'lib/categories.dart',
+          'lib/my_orders.dart',
+          'lib/nearby_sellers.dart',
+          'lib/profile.dart',
         ];
 
         setState(() {
@@ -35,7 +35,6 @@ class _BottomNavigationState extends State<BottomNavigation> {
         if (index == 0) {
           Navigator.of(context).pushReplacementNamed(routes[0]);
         } else {
-          // Otherwise, navigate to the selected screen.
           Navigator.pushNamed(context, routes[index]);
         }
       },

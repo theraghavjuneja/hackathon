@@ -8,9 +8,9 @@ class CategoriesScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Categories'),
       ),
-      backgroundColor: const Color(0xFFEDF6FF), // Set background color
+      backgroundColor: const Color(0xFFEDF6FF),
       body: Padding(
-        padding: const EdgeInsets.all(16.0), // Add spacing from the top bar
+        padding: const EdgeInsets.all(16.0),
         child: CategoryGridView(),
       ),
       bottomNavigationBar: const BottomNavigation(),
@@ -21,38 +21,38 @@ class CategoriesScreen extends StatelessWidget {
 class CategoryGridView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ListView( // Use ListView for dividers
+    return ListView(
       children: <Widget>[
         GridView.builder(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 4,
           ),
-          itemCount: 10, // Number of categories
+          itemCount: 10,
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
           itemBuilder: (context, index) {
             return Column(
               children: [
                 Container(
-                  width: 60, // Adjust circle size as needed
+                  width: 60,
                   height: 60,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color(0xFFCFDFEF), // Set circle color
+                    color: Color(0xFFCFDFEF),
                   ),
                   child: Center(
                     child: Text(
                       (index + 1).toString(),
                       style: const TextStyle(
-                        color: Colors.white, // Change text color as needed
+                        color: Colors.white,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
                 ),
-                const SizedBox(height: 8), // Adjust spacing as needed
+                const SizedBox(height: 8),
                 Text(
-                  'Text${index + 1}', // Display your category text here
+                  'Text${index + 1}',
                   style: const TextStyle(
                     fontWeight: FontWeight.bold,
                   ),
@@ -62,9 +62,9 @@ class CategoryGridView extends StatelessWidget {
           },
         ),
         Divider(
-          color: Colors.grey[300], // Light shade color for divider
-          thickness: 1, // Divider thickness
-          height: 16, // Spacing after each row
+          color: Colors.grey[300],
+          thickness: 1,
+          height: 16,
         ),
       ],
     );

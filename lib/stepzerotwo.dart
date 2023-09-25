@@ -11,7 +11,7 @@ class Stepzerotwo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double progress = 2 / 3; // 66.66% progress
+    double progress = 2 / 3;
 
     return SafeArea(
         child: Scaffold(
@@ -62,7 +62,7 @@ class Stepzerotwo extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20.0),
                   child: TextFormField(
-                    obscureText: true, // Hide the password text
+                    obscureText: true,
                     style: const TextStyle(
                       fontWeight: FontWeight.w600,
                       fontSize: 22.0,
@@ -72,13 +72,13 @@ class Stepzerotwo extends StatelessWidget {
                       hintText: 'Enter password',
                       border: InputBorder.none,
                       suffixIcon: IconButton(
-                        icon: const Icon(Icons.visibility), // Eye icon
+                        icon: const Icon(Icons.visibility),
                         onPressed: () {
-                          // Toggle password visibility
+
                         },
                       ),
                     ),
-                    // Add any additional logic you need for password validation
+
                   ),
                 ),
                 const SizedBox(
@@ -106,9 +106,8 @@ class Stepzerotwo extends StatelessWidget {
                         child: Slider(
                           value: progress,
                           onChanged: (value) {
-                            // Handle slider value change
                           },
-                          activeColor: const Color(0xFF29BF12), // Green color for progress
+                          activeColor: const Color(0xFF29BF12),
                           inactiveColor: const Color(0xFFF0F0F0),
                         ),
                       ),

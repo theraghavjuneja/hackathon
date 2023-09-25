@@ -21,8 +21,8 @@ class _PasswordToggleState extends State<PasswordToggle> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        widget.onTap(); // Invoke the onTap callback
-        _togglePasswordVisibility(); // Toggle password visibility
+        widget.onTap();
+        _togglePasswordVisibility();
       },
       child: Icon(
         _obscureText ? Icons.visibility : Icons.visibility_off,

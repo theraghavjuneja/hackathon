@@ -4,10 +4,10 @@ import 'bottomnavbar.dart';
 class NearbySellersScreen extends StatelessWidget {
   NearbySellersScreen({super.key});
 
-  // Sample list of nearby sellers
+
   final List<Map<String, dynamic>> nearbySellers = [
     {
-      // currently this page has been hardcoded ..as sirf 36 hr the
+
       'name': 'Seller 1',
       'location': 'Bennett University',
       'description': 'Quality products at affordable prices',
@@ -28,7 +28,7 @@ class NearbySellersScreen extends StatelessWidget {
       'distance': '2.3 miles from your place',
       'itemsSold': 'Art, Handicrafts, Jewelry',
     },
-    // Add more sellers as needed
+
   ];
 
   @override
@@ -38,21 +38,21 @@ class NearbySellersScreen extends StatelessWidget {
         title: const Text('Nearby Sellers'),
       ),
       body: Container(
-        color: Color(0xFFEDF6FF), // Set the background color
+        color: Color(0xFFEDF6FF),
         child: ListView.builder(
           itemCount: nearbySellers.length,
           itemBuilder: (context, index) {
             final seller = nearbySellers[index];
             return Card(
-              elevation: 4, // Add elevation to the cards
+              elevation: 4,
               margin: const EdgeInsets.all(8.0),
-              color: Colors.white, // Set card color to white
+              color: Colors.white,
               child: ListTile(
                 title: Text(
                   seller['name'],
                   style: const TextStyle(
-                    fontWeight: FontWeight.bold, // Make text bold
-                    fontSize: 18, // Increase font size
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
                   ),
                 ),
                 subtitle: Column(
@@ -64,14 +64,13 @@ class NearbySellersScreen extends StatelessWidget {
                     Text(
                       'Sells: ${seller['itemsSold']}',
                       style: const TextStyle(
-                        fontStyle: FontStyle.italic, // Make text italic
+                        fontStyle: FontStyle.italic,
                       ),
                     ),
                   ],
                 ),
                 onTap: () {
-                  // Handle tapping on a seller item
-                  // You can navigate to a seller's detail screen or perform any action here
+
                 },
               ),
             );

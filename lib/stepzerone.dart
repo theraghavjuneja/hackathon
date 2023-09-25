@@ -101,15 +101,15 @@ class Stepzerone extends StatelessWidget {
                           onChanged: (value) {
                             // Handle slider value change
                           },
-                          activeColor: const Color(0xFF363d80), // Color of the filled part
-                          inactiveColor: const Color(0xFFF0F0F0), // Color of the unfilled part
+                          activeColor: const Color(0xFF363d80),
+                          inactiveColor: const Color(0xFFF0F0F0),
                         ),
                       ),
                     ),
                   ],
                 ),
                 const SizedBox(
-                  height: 20.0, // Add more spacing if needed
+                  height: 20.0,
                 ),
                 CustomButton(
                   onPressed: () => Navigator.of(context).push(
