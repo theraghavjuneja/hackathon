@@ -6,7 +6,7 @@ class CategoriesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Categories'),
+        title: const Text('Category'),
       ),
       backgroundColor: const Color(0xFFEDF6FF),
       body: Padding(
