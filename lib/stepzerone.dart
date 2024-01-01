@@ -69,13 +69,13 @@ class Stepzerone extends StatelessWidget {
                     ),
                     decoration: const InputDecoration(
                       hintText: 'Enter email address',
-                      border: InputBorder.none, // Remove borders
+                      border: InputBorder.none, 
                     ),
-                    // Add any additional logic you need for email validation
+                  
                   ),
                 ),
                 const SizedBox(
-                  height: 100.0, // Add spacing
+                  height: 100.0, 
                 ),
                 Column(
                   children: <Widget>[
